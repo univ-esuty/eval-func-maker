@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>作ろう評価関数</title>
+    <script type="text/javascript" src="js/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="js/main.js"></script>
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/layout.css">
+</head>
+<body>
+    <div >
+        <h1 align="center">評価関数メーカー</h1>
+    </div>
+
+    <div id="top-view">
+        <table align="center" height="30%">
+            <tr>
+                <th><input id="makeButton" class="main-button" type="button" value="評価関数を作る"></th>
+            </tr>
+        </table>
+    </div>
+    <br>
+    <div id="make">
+        <div id="make-setting" style="display: none;">
+            <div class="setting-table" width="100%">
+                <table id="make-setting-table" width="100%">
+                    <tr>
+                        <th width="75%">評価項目</th>
+                        <th>優先割合</th>
+                        <th></th>
+                    </tr>
+                </table>
+            </div>
+            <p align="center"><input class="addButton sub-button1" type="button" value="項目追加"></p>
+            <br>
+            <p class="message">優先割合の割り当て可能数 ⇒ 残り100%</p>
+            <p><input class="finButton main-button" type="button" value="作成"></p>
+        </div>
+    </div>
+    <br>
+
+    <div id="use" style="display: none;">
+        <h3><input id="addButton" class="main-button" type="button" value="評価項目をリストに追加"></h3>
+        <div id="add-setting" style="display: none;">
+            <p>名前：<input type='text' id='add-item-name' value='商品X' ></p>
+            <div class="setting-table" width="100%">
+                <table id="use-setting-table" width="100%">
+                    <tr>
+                        <th width="75%">評価項目</th>
+                        <th>得点(10点)</th>
+                    </tr>
+                </table>
+            </div>
+            <p><input class="finButton main-button" type="button" value="計算"></p>
+        </div>
+        <br>
+
+        <h2>評価結果 (リスト)</h2>
+        <table id="result" class="setting-table" width="100%">
+            <tr>
+                <th width="85%">商品名</th>
+                <th width="15%">得点</th>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

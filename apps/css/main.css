@@ -1,0 +1,91 @@
+.main-button {
+    width: 250px;
+    height: 50px;
+    display: inline-block;
+    padding: 0.5em 1em;
+    text-decoration: none;
+    background: #f7f7f7;
+    border-left: solid 6px #33c7ec;/*左線*/
+    color: #33c7ec;/*文字色*/
+    font-weight: bold;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.29);
+}
+.main-button:active {
+    box-shadow: inset 0 0 2px rgba(128, 128, 128, 0.1);
+    transform: translateY(2px);
+}
+
+.sub-button1 {
+    display: inline-block;
+    padding: 7px 20px;
+    border-radius: 25px;
+    text-decoration: none;
+    color: #FFF;
+    background-image: linear-gradient(45deg, rgb(96, 230, 248) 0%, #1dcceb 100%);
+    transition: .4s;
+}
+
+.sub-button1:hover {
+    background-image: linear-gradient(45deg, #FFC107 0%, #f76a35 100%);
+}
+
+div{
+    text-align: center;
+}
+
+.setting-table {
+    border-spacing: 0;
+    border: solid #ccc 1px;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #ccc;         
+}
+
+.setting-table td, .setting-table th {
+    border-left: 1px solid #ccc;
+    border-top: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;    
+}
+
+.setting-table th {
+    background-color: #dce9f9;
+    box-shadow: 0 1px 0 rgba(255,255,255,.8) inset;        
+    border-top: none;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5); 
+}
+
+.setting-table td:first-child, .setting-table th:first-child {
+    border-left: none;
+}
+
+.setting-table th:first-child {
+    border-radius: 6px 0 0 0;
+}
+
+.setting-table th:last-child {
+    border-radius: 0 6px 0 0;
+}
+
+.setting-table th:only-child{
+    border-radius: 6px 6px 0 0;
+}
+
+.setting-table tr:last-child td:first-child {
+    border-radius: 0 0 0 6px;
+}
+
+.setting-table tr:last-child td:last-child {
+    border-radius: 0 0 6px 0;
+}
+
+.result-table td, .result-table th {
+    padding: 10px;
+    border-bottom: 1px solid #f2f2f2;    
+}
+
+.result-table {
+    border-spacing: 0;
+    border: solid #ccc 1px;
+    border-radius: 6px;
+    box-shadow: 0 1px 1px #ccc;         
+}
